@@ -1,1 +1,82 @@
-a
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			color: #fff;
+		}
+		.box{
+			width: 700px;
+			height: 300px;
+			background: #000;
+			margin: auto;
+		}
+		.left{
+			float: left;
+			width: 500px;
+			height: 300px;
+			padding: 20px;
+		}
+		.right{
+			float: right;
+			width: 200px;
+			height: 300px;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		.fl::after, .fl::before, .fr::after, .fr::before{
+			content: "";
+			clear: both;
+		}
+		.title{
+			font-weight: bold;
+		}
+		.line{
+			display: inline-block;
+			width: 1px;
+			background: gray;
+			height: 15px;
+			margin: 0px 10px;
+			vertical-align: middle;
+		}
+		.item{
+			background: gray;
+		}
+		.progress{
+			background: ;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left">
+			<div>
+				<span class="title">中通世纪 V10</span>
+				<span class="line"></span>
+				<span class="">设备号： A123123</span> 
+			</div>
+			<div class="item">
+				<div>
+					<span class="fr">2020年4月1日到期</span>
+					<p>数据服务</p>
+				</div>
+				<div class="progress">
+					<div class="sonpro"></div>
+				</div>
+				<div>
+					<span class="fr">剩余： 8.8G</span>
+					<p>已用： 1.2G/10G</p>
+				</div>
+			</div>
+		</div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>
